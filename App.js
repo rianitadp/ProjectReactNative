@@ -4,33 +4,21 @@
  * @flow
  */
 
-import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View,Image} from 'react-native';
+import Judul from './Component/Judul';
 
-const instructions = Platform.select({ 
-  android: 'Nama : Rianita Dwi Pangestu\n' +
-    'Kelas : XI RPL 1\n' + 'No.Absen : 30'
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          
-        </Text>
-        <Text style={styles.instructions}>
-          
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
+       <View style={styles.container}>
+       <Judul/>
+        <Text style={styles.instructions}>Nama: Rianita Dwi Pangestu</Text>
+        <Text style={styles.instructions}>Kelas: XI RPL 1 </Text>
+        <Text style={styles.instructions}>No.Absen: 30 </Text>
+        <Image style={{width: 300, height:300}}
+        source={require('./sapa.jpg')}
+        /> 
       </View>
     );
   }
@@ -41,7 +29,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#b1cfdd',
   },
   welcome: {
     fontSize: 20,
