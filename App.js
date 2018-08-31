@@ -6,7 +6,7 @@
 
 import React from 'react';
 import { StyleSheet, Text, View,Image} from 'react-native';
-import Judul from './Component/Judul';
+import Judul from './Components/Judul';
 
 export default class App extends React.Component {
   render() {

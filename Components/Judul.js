@@ -13,7 +13,8 @@ const salon = {
 	judul: {
 		color: "black",
 		fontSize: 50,
-		fontWeight: 'bold'
+		fontWeight: 'bold',
+		backgroundColor: '#f00'
 	}
 }
 
